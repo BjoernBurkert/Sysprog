@@ -1,0 +1,95 @@
+Manueller Test:
+
+Verhält sich das C-Programm bei allen Eingaben wie das Java-Programm?
+- Wenn man bei Java dezimalwerte als Argumente eingibt dann dort einen Fehler und bei C gibt es keinen Fehler.
+- Die Zufallszahlen enthalten auch negative Werte.
+Funktioniert die Fehlerbehandlung bei Speicherreservierung und Einlesen?
+- Ja.
+Meldet valgrind Fehler?
+- Nein.
+Lässt sich Ihr Programm auch mit g++ ohne Fehlermeldungen und Warnungen übersetzen?
+- Ja.
+
+Laufzeitmessung: Mit 1000
+Java-Programm:
+real    0m0.145s
+user    0m0.164s                
+sys     0m0.008s
+
+C-Programm:
+real    0m0.005s
+user    0m0.000s
+sys     0m0.000s
+
+Mit 10000
+
+Java-Programm:
+real    0m0.320s
+user    0m0.424s
+sys     0m0.008s
+
+C-Programm:
+real    0m0.371s
+user    0m0.368s
+sys     0m0.000s
+
+Mit 100000
+
+Java-Programm:
+real    0m16.634s
+user    0m16.744s
+sys     0m0.044s
+
+C-Programm:
+real    0m16.634s
+user    0m16.744s
+sys     0m0.044s
+
+Wächst die Ausführungszeit tatsächlich quadratisch mit der Feldgröße?
+- Nein
+
+Ist das Java-Programm oder das C-Programm schneller?
+- Das Java-Programm ist schneller.
+
+Mit der Optimierungsoption getestet:
+Mit 1000.
+
+C-Programm
+real    0m0.009s
+user    0m0.004s
+sys     0m0.000s
+
+Java-Programm
+real    0m0.134s
+user    0m0.148s
+sys     0m0.012s
+
+Mit 10000
+
+C-Programm
+real    0m0.158s
+user    0m0.156s
+sys     0m0.000s
+
+Java-Programm
+real    0m0.346s
+user    0m0.440s
+sys     0m0.012s
+
+Mit 100000
+
+C-Programm
+real    0m12.953s
+user    0m12.932s
+sys     0m0.016s
+
+Java-Programm
+real    0m16.644s
+user    0m16.764s
+sys     0m0.044s
+
+Ist das optimierte Programm erkennbar schneller?
+-Ja.
+Was hat der Compiler an dem C-Programm optimiert?
+-Ich weiß es nicht.
+

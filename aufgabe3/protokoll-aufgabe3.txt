@@ -1,0 +1,281 @@
+==3553== Command: ./stringssort-optimiert 0
+==3553== 
+Aufruf: c Bubblesort Anzahl = 0
+==3553== 
+==3553== HEAP SUMMARY:
+==3553==     in use at exit: 0 bytes in 0 blocks
+==3553==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==3553== 
+==3553== All heap blocks were freed -- no leaks are possible
+==3553== 
+==3553== For counts of detected and suppressed errors, rerun with: -v
+==3553== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+bj721bur@g149-lx08:~/z-drive/Systemproggen/aufgabe3$ valgrind ./stringssort-optimiert 1
+==3554== Memcheck, a memory error detector
+==3554== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3554== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==3554== Command: ./stringssort-optimiert 1
+==3554== 
+Unsortiertes Feld:
+0 
+Sortiertes Feld:
+==3554== Invalid write of size 1
+==3554==    at 0x400C01: main (stringssort-optimiert.c:103)
+==3554==  Address 0x51e00e2 is 0 bytes after a block of size 2 alloc'd
+==3554==    at 0x4C28C20: malloc (vg_replace_malloc.c:296)
+==3554==    by 0x400BCF: main (stringssort-optimiert.c:97)
+==3554== 
+0 
+==3554== 
+==3554== HEAP SUMMARY:
+==3554==     in use at exit: 0 bytes in 0 blocks
+==3554==   total heap usage: 3 allocs, 3 frees, 5 bytes allocated
+==3554== 
+==3554== All heap blocks were freed -- no leaks are possible
+==3554== 
+==3554== For counts of detected and suppressed errors, rerun with: -v
+==3554== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+bj721bur@g149-lx08:~/z-drive/Systemproggen/aufgabe3$ make stringssort-optimiert
+gcc -g -W -Wall -ansi -pedantic    stringssort-optimiert.c   -o stringssort-optimiert
+bj721bur@g149-lx08:~/z-drive/Systemproggen/aufgabe3$ clear
+bj721bur@g149-lx08:~/z-drive/Systemproggen/aufgabe3$ ./stringssort 
+Aufruf: c stringsort Anzahl
+bj721bur@g149-lx08:~/z-drive/Systemproggen/aufgabe3$ ./stringssort 0
+Aufruf: c stringsort Anzahl = 0
+bj721bur@g149-lx08:~/z-drive/Systemproggen/aufgabe3$ ./stringssort 1
+Unsortiertes Feld:
+0 
+Sortiertes Feld:
+0 
+bj721bur@g149-lx08:~/z-drive/Systemproggen/aufgabe3$ ./stringssort 2
+Unsortiertes Feld:
+1 0 
+Sortiertes Feld:
+0 1 
+bj721bur@g149-lx08:~/z-drive/Systemproggen/aufgabe3$ ./stringssort 20
+Unsortiertes Feld:
+7 13 6 16 10 6 19 4 12 6 6 15 15 19 16 8 9 0 18 7 
+Sortiertes Feld:
+0 10 12 13 15* 16* 18 19* 4 6*** 7* 8 9 
+bj721bur@g149-lx08:~/z-drive/Systemproggen/aufgabe3$ ./stringssort 200
+Unsortiertes Feld:
+82 154 48 140 54 67 182 110 156 119 131 136 177 16 122 162 158 153 55 84 77 66 47 149 43 192 164 81 52 137 154 135 43 154 27 97 21 10 160 130 129 91 66 58 60 140 20 18 93 76 54 170 94 101 71 138 46 35 171 98 173 125 185 168 32 13 18 53 23 178 183 104 69 50 162 81 190 182 51 36 58 105 6 153 159 78 43 5 65 14 55 190 91 41 159 123 6 177 129 29 155 112 85 176 114 47 58 57 29 109 93 40 167 99 145 126 129 140 131 195 154 138 185 197 131 96 73 137 73 2 118 180 114 3 109 181 50 119 38 32 180 131 24 147 182 169 73 112 109 156 59 15 47 196 164 178 93 37 116 118 39 34 99 106 190 8 87 192 79 77 24 59 160 48 7 142 169 32 6 30 141 17 197 188 14 162 166 59 199 34 177 191 69 76 97 59 36 136 51 67 
+Sortiertes Feld:
+10 101 104 105 106 109** 110 112* 114* 116 118* 119* 122 123 125 126 129** 13 130 131*** 135 136* 137* 138* 14* 140** 141 142 145 147 149 15 153* 154*** 155 156* 158 159* 16 160* 162** 164* 166 167 168 169* 17 170 171 173 176 177** 178* 18* 180* 181 182** 183 185* 188 190** 191 192* 195 196 197* 199 2 20 21 23 24* 27 29* 3 30 32** 34* 35 36* 37 38 39 40 41 43** 46 47** 48* 5 50* 51* 52 53 54* 55* 57 58** 59*** 6** 60 65 66* 67* 69* 7 71 73** 76* 77* 78 79 8 81* 82 84 85 87 91* 93** 94 96 97* 98 99* 
+bj721bur@g149-lx08:~/z-drive/Systemproggen/aufgabe3$ valgrind ./stringssort   
+==3579== Memcheck, a memory error detector
+==3579== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3579== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==3579== Command: ./stringssort
+==3579== 
+Aufruf: c stringsort Anzahl
+==3579== 
+==3579== HEAP SUMMARY:
+==3579==     in use at exit: 0 bytes in 0 blocks
+==3579==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==3579== 
+==3579== All heap blocks were freed -- no leaks are possible
+==3579== 
+==3579== For counts of detected and suppressed errors, rerun with: -v
+==3579== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+bj721bur@g149-lx08:~/z-drive/Systemproggen/aufgabe3$ valgrind ./stringssort 0
+==3580== Memcheck, a memory error detector
+==3580== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3580== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==3580== Command: ./stringssort 0
+==3580== 
+Aufruf: c stringsort Anzahl = 0
+==3580== 
+==3580== HEAP SUMMARY:
+==3580==     in use at exit: 0 bytes in 0 blocks
+==3580==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==3580== 
+==3580== All heap blocks were freed -- no leaks are possible
+==3580== 
+==3580== For counts of detected and suppressed errors, rerun with: -v
+==3580== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+bj721bur@g149-lx08:~/z-drive/Systemproggen/aufgabe3$ valgrind ./stringssort 1
+==3581== Memcheck, a memory error detector
+==3581== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3581== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==3581== Command: ./stringssort 1
+==3581== 
+Unsortiertes Feld:
+0 
+Sortiertes Feld:
+0 
+==3581== 
+==3581== HEAP SUMMARY:
+==3581==     in use at exit: 0 bytes in 0 blocks
+==3581==   total heap usage: 3 allocs, 3 frees, 12 bytes allocated
+==3581== 
+==3581== All heap blocks were freed -- no leaks are possible
+==3581== 
+==3581== For counts of detected and suppressed errors, rerun with: -v
+==3581== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+bj721bur@g149-lx08:~/z-drive/Systemproggen/aufgabe3$ valgrind ./stringssort 2
+==3582== Memcheck, a memory error detector
+==3582== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3582== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==3582== Command: ./stringssort 2
+==3582== 
+Unsortiertes Feld:
+0 1 
+Sortiertes Feld:
+0 1 
+==3582== 
+==3582== HEAP SUMMARY:
+==3582==     in use at exit: 0 bytes in 0 blocks
+==3582==   total heap usage: 4 allocs, 4 frees, 24 bytes allocated
+==3582== 
+==3582== All heap blocks were freed -- no leaks are possible
+==3582== 
+==3582== For counts of detected and suppressed errors, rerun with: -v
+==3582== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+bj721bur@g149-lx08:~/z-drive/Systemproggen/aufgabe3$ valgrind ./stringssort 20
+==3584== Memcheck, a memory error detector
+==3584== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3584== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==3584== Command: ./stringssort 20
+==3584== 
+Unsortiertes Feld:
+8 3 9 15 18 15 14 16 0 2 2 7 4 3 1 5 10 18 13 7 
+Sortiertes Feld:
+0 1 10 13 14 15* 16 18* 2* 3* 4 5 7* 8 9 
+==3584== 
+==3584== HEAP SUMMARY:
+==3584==     in use at exit: 0 bytes in 0 blocks
+==3584==   total heap usage: 22 allocs, 22 frees, 280 bytes allocated
+==3584== 
+==3584== All heap blocks were freed -- no leaks are possible
+==3584== 
+==3584== For counts of detected and suppressed errors, rerun with: -v
+==3584== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+bj721bur@g149-lx08:~/z-drive/Systemproggen/aufgabe3$ valgrind ./stringssort 200
+==3585== Memcheck, a memory error detector
+==3585== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3585== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==3585== Command: ./stringssort 200
+==3585== 
+Unsortiertes Feld:
+153 55 103 133 61 129 40 142 197 177 156 72 190 117 46 199 167 22 52 176 74 173 5 109 35 197 109 49 180 155 86 133 10 190 66 72 119 59 166 68 188 122 93 178 39 139 178 158 114 30 86 188 156 91 97 143 89 158 144 69 114 30 154 124 20 172 148 92 31 114 112 19 188 5 150 179 97 128 138 11 110 24 199 18 116 48 161 157 7 57 26 121 88 132 45 60 104 194 104 88 60 17 107 1 22 9 180 119 137 118 130 0 95 81 18 163 130 132 120 137 189 98 10 77 182 55 138 86 1 194 174 14 11 34 15 34 43 195 105 133 66 188 133 113 21 151 76 151 83 148 40 73 198 50 102 180 58 192 66 11 187 193 25 198 27 40 184 70 188 42 3 6 30 88 119 51 40 147 155 75 47 195 100 45 198 155 177 56 147 195 67 86 188 45 37 167 85 21 190 25 
+Sortiertes Feld:
+0 1* 10* 100 102 103 104* 105 107 109* 11** 110 112 113 114** 116 117 118 119** 120 121 122 124 128 129 130* 132* 133*** 137* 138* 139 14 142 143 144 147* 148* 15 150 151* 153 154 155** 156* 157 158* 161 163 166 167* 17 172 173 174 176 177* 178* 179 18* 180** 182 184 187 188***** 189 19 190** 192 193 194* 195** 197* 198** 199* 20 21* 22* 24 25* 26 27 3 30** 31 34* 35 37 39 40*** 42 43 45** 46 47 48 49 5* 50 51 52 55* 56 57 58 59 6 60* 61 66** 67 68 69 7 70 72* 73 74 75 76 77 81 83 85 86*** 88** 89 9 91 92 93 95 97* 98 
+==3585== 
+==3585== HEAP SUMMARY:
+==3585==     in use at exit: 0 bytes in 0 blocks
+==3585==   total heap usage: 202 allocs, 202 frees, 3,200 bytes allocated
+==3585== 
+==3585== All heap blocks were freed -- no leaks are possible
+==3585== 
+==3585== For counts of detected and suppressed errors, rerun with: -v
+==3585== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+bj721bur@g149-lx08:~/z-drive/Systemproggen/aufgabe3$ valgrind ./stringssort-optimiert 
+==3586== Memcheck, a memory error detector
+==3586== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3586== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==3586== Command: ./stringssort-optimiert
+==3586== 
+Aufruf: c Bubblesort Anzahl
+==3586== 
+==3586== HEAP SUMMARY:
+==3586==     in use at exit: 0 bytes in 0 blocks
+==3586==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==3586== 
+==3586== All heap blocks were freed -- no leaks are possible
+==3586== 
+==3586== For counts of detected and suppressed errors, rerun with: -v
+==3586== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+bj721bur@g149-lx08:~/z-drive/Systemproggen/aufgabe3$ valgrind ./stringssort-optimiert 0
+==3587== Memcheck, a memory error detector
+==3587== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3587== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==3587== Command: ./stringssort-optimiert 0
+==3587== 
+Aufruf: c Bubblesort Anzahl = 0
+==3587== 
+==3587== HEAP SUMMARY:
+==3587==     in use at exit: 0 bytes in 0 blocks
+==3587==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==3587== 
+==3587== All heap blocks were freed -- no leaks are possible
+==3587== 
+==3587== For counts of detected and suppressed errors, rerun with: -v
+==3587== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+bj721bur@g149-lx08:~/z-drive/Systemproggen/aufgabe3$ valgrind ./stringssort-optimiert 1
+==3588== Memcheck, a memory error detector
+==3588== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3588== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==3588== Command: ./stringssort-optimiert 1
+==3588== 
+Unsortiertes Feld:
+0 
+Sortiertes Feld:
+0 
+==3588== 
+==3588== HEAP SUMMARY:
+==3588==     in use at exit: 0 bytes in 0 blocks
+==3588==   total heap usage: 3 allocs, 3 frees, 5 bytes allocated
+==3588== 
+==3588== All heap blocks were freed -- no leaks are possible
+==3588== 
+==3588== For counts of detected and suppressed errors, rerun with: -v
+==3588== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+bj721bur@g149-lx08:~/z-drive/Systemproggen/aufgabe3$ valgrind ./stringssort-optimiert 2
+==3589== Memcheck, a memory error detector
+==3589== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3589== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==3589== Command: ./stringssort-optimiert 2
+==3589== 
+Unsortiertes Feld:
+0 0 
+Sortiertes Feld:
+0* 
+==3589== 
+==3589== HEAP SUMMARY:
+==3589==     in use at exit: 0 bytes in 0 blocks
+==3589==   total heap usage: 3 allocs, 3 frees, 10 bytes allocated
+==3589== 
+==3589== All heap blocks were freed -- no leaks are possible
+==3589== 
+==3589== For counts of detected and suppressed errors, rerun with: -v
+==3589== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+bj721bur@g149-lx08:~/z-drive/Systemproggen/aufgabe3$ valgrind ./stringssort-optimiert 20
+==3590== Memcheck, a memory error detector
+==3590== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3590== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==3590== Command: ./stringssort-optimiert 20
+==3590== 
+Unsortiertes Feld:
+11 0 19 3 17 1 19 16 10 18 8 18 7 15 7 6 15 8 7 15 
+Sortiertes Feld:
+0 1 10 11 15** 16 17 18* 19* 3 6 7** 8* 
+==3590== 
+==3590== HEAP SUMMARY:
+==3590==     in use at exit: 0 bytes in 0 blocks
+==3590==   total heap usage: 3 allocs, 3 frees, 140 bytes allocated
+==3590== 
+==3590== All heap blocks were freed -- no leaks are possible
+==3590== 
+==3590== For counts of detected and suppressed errors, rerun with: -v
+==3590== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+bj721bur@g149-lx08:~/z-drive/Systemproggen/aufgabe3$ valgrind ./stringssort-optimiert 200
+==3591== Memcheck, a memory error detector
+==3591== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3591== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==3591== Command: ./stringssort-optimiert 200
+==3591== 
+Unsortiertes Feld:
+130 79 76 172 113 175 66 104 108 186 168 196 93 177 74 23 155 19 40 1 163 165 102 92 15 99 24 88 61 7 127 191 38 3 163 152 130 181 8 190 120 176 187 165 105 61 188 12 32 180 13 195 146 67 87 161 167 64 2 180 23 129 171 61 84 86 165 14 20 173 4 140 101 143 105 6 157 45 171 189 26 184 137 124 4 24 37 171 40 39 103 63 120 74 77 156 112 42 170 132 16 127 72 69 22 129 76 179 175 47 121 1 183 58 77 187 34 114 110 75 154 13 90 26 39 167 183 152 162 153 84 130 32 109 199 7 38 75 186 13 74 107 166 10 117 43 197 152 110 60 179 64 73 21 90 113 189 73 65 103 179 101 33 163 10 32 170 1 60 109 14 86 168 133 96 86 128 46 190 38 106 169 54 179 142 145 44 83 170 61 186 101 163 19 65 125 52 187 126 64 
+Sortiertes Feld:
+1** 10* 101** 102 103* 104 105* 106 107 108 109* 110* 112 113* 114 117 12 120* 121 124 125 126 127* 128 129* 13** 130** 132 133 137 14* 140 142 143 145 146 15 152** 153 154 155 156 157 16 161 162 163*** 165** 166 167* 168* 169 170** 171** 172 173 175* 176 177 179*** 180* 181 183* 184 186** 187** 188 189* 19* 190* 191 195 196 197 199 2 20 21 22 23* 24* 26* 3 32** 33 34 37 38** 39* 4* 40* 42 43 44 45 46 47 52 54 58 6 60* 61*** 63 64** 65* 66 67 69 7* 72 73* 74** 75* 76* 77* 79 8 83 84* 86** 87 88 90* 92 93 96 99 
+==3591== 
+==3591== HEAP SUMMARY:
+==3591==     in use at exit: 0 bytes in 0 blocks
+==3591==   total heap usage: 3 allocs, 3 frees, 1,800 bytes allocated
+==3591== 
+==3591== All heap blocks were freed -- no leaks are possible
+==3591== 
+==3591== For counts of detected and suppressed errors, rerun with: -v
+==3591== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+bj721bur@g149-lx08:~/z-drive/Systemproggen/aufgabe3$ 

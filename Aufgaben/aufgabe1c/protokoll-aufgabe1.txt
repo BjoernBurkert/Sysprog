@@ -1,0 +1,48 @@
+Unsortiert:
+
+Adresse: 0xbfd067a0; Platzbedarf: 4; Typ: int , Name: iZahl , Wert: 345
+Adresse: 0xbfd0679c; Platzbedarf: 2; Typ: short , Name: SiZahl , Wert: 3
+Adresse: 0xbfd067a4; Platzbedarf: 4; Typ: long , Name: LiZahl , Wert: 13
+Adresse: 0xbfd067a8; Platzbedarf: 4; Typ: unsigned int , Name: UiBytefolge , Wert: 4095
+Adresse: 0xbfd0679e; Platzbedarf: 2; Typ: unsigned short int , Name: USiBytefolge , Wert: 65535
+Adresse: 0xbfd067ac; Platzbedarf: 4; Typ: unsigned long int , Name: ULiBytefolge , Wert: 4095
+Adresse: 0xbfd067b0; Platzbedarf: 4; Typ: float , Name: fiZahl , Wert: 3.150000
+Adresse: 0xbfd067b8; Platzbedarf: 8; Typ: double , Name: dZahl , Wert: 3.130000
+Adresse: 0xbfd067c0; Platzbedarf: 12; Typ: long double , Name: ldZahl , Wert: 3.120000
+Adresse: 0xbfd06799; Platzbedarf: 1; Typ: char , Name: zeichen , Wert: a
+Adresse: 0xbfd0679a; Platzbedarf: 1; Typ: signed char, Name: scByte , Wert: 4294967295
+Adresse: 0xbfd0679b; Platzbedarf: 1; Typ: unsigned cahr , Name: ucByte , Wert: 255
+Adresse: 0xbfd067b4; Platzbedarf: 4; Typ: String , Name: s , Wert: Hallo
+Dieser Rechner ist ein ILP 32bit Rechner!
+
+Sortiert:
+Adresse: 0xbfab7ed9; Platzbedarf: 1; Typ: char , Name: zeichen , Wert: a
+Adresse: 0xbfab7eda; Platzbedarf: 1; Typ: signed char, Name: scByte , Wert: 4294967295
+Adresse: 0xbfab7edb; Platzbedarf: 1; Typ: unsigned cahr , Name: ucByte , Wert: 255
+Adresse: 0xbfab7edc; Platzbedarf: 2; Typ: short , Name: SiZahl , Wert: 3
+Adresse: 0xbfab7ede; Platzbedarf: 2; Typ: unsigned short int , Name: USiBytefolge , Wert: 65535
+Adresse: 0xbfab7ee0; Platzbedarf: 4; Typ: int , Name: iZahl , Wert: 345
+Adresse: 0xbfab7ee4; Platzbedarf: 4; Typ: long , Name: LiZahl , Wert: 13
+Adresse: 0xbfab7ee8; Platzbedarf: 4; Typ: unsigned int , Name: UiBytefolge , Wert: 4095
+Adresse: 0xbfab7eec; Platzbedarf: 4; Typ: unsigned long int , Name: ULiBytefolge , Wert: 4095
+Adresse: 0xbfab7ef0; Platzbedarf: 4; Typ: float , Name: fiZahl , Wert: 3.150000
+Adresse: 0xbfab7ef4; Platzbedarf: 4; Typ: String , Name: s , Wert: Hallo
+Adresse: 0xbfab7ef8; Platzbedarf: 8; Typ: double , Name: dZahl , Wert: 3.130000
+Adresse: 0xbfab7f00; Platzbedarf: 12; Typ: long double , Name: ldZahl , Wert: 3.120000
+Dieser Rechner ist ein ILP 32bit Rechner!
+
+Sortiert -r:
+Dieser Rechner ist ein ILP 32bit Rechner!
+Adresse: 0xbfe1aae0; Platzbedarf: 12; Typ: long double , Name: ldZahl , Wert: 3.120000
+Adresse: 0xbfe1aad8; Platzbedarf: 8; Typ: double , Name: dZahl , Wert: 3.130000
+Adresse: 0xbfe1aad4; Platzbedarf: 4; Typ: String , Name: s , Wert: Hallo
+Adresse: 0xbfe1aad0; Platzbedarf: 4; Typ: float , Name: fiZahl , Wert: 3.150000
+Adresse: 0xbfe1aacc; Platzbedarf: 4; Typ: unsigned long int , Name: ULiBytefolge , Wert: 4095
+Adresse: 0xbfe1aac8; Platzbedarf: 4; Typ: unsigned int , Name: UiBytefolge , Wert: 4095
+Adresse: 0xbfe1aac4; Platzbedarf: 4; Typ: long , Name: LiZahl , Wert: 13
+Adresse: 0xbfe1aac0; Platzbedarf: 4; Typ: int , Name: iZahl , Wert: 345
+Adresse: 0xbfe1aabe; Platzbedarf: 2; Typ: unsigned short int , Name: USiBytefolge , Wert: 65535
+Adresse: 0xbfe1aabc; Platzbedarf: 2; Typ: short , Name: SiZahl , Wert: 3
+Adresse: 0xbfe1aabb; Platzbedarf: 1; Typ: unsigned cahr , Name: ucByte , Wert: 255
+Adresse: 0xbfe1aaba; Platzbedarf: 1; Typ: signed char, Name: scByte , Wert: 4294967295
+Adresse: 0xbfe1aab9; Platzbedarf: 1; Typ: char , Name: zeichen , Wert: a

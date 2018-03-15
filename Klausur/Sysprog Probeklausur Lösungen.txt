@@ -1,0 +1,170 @@
+	Syssprog Probekklausur Lösungen
+
+	Aufgabe 1:
+	a.)
+
+	int a;			a = 1;
+	int *b;			b = &a;
+	double c[2];		c[0] = 2.3;
+	struct Raum d;		c[1] = 4.5;
+	struct Raum *e;		
+
+	struct Raum		d.zimmer = 109;
+	{			d.gebauede = ' C ';
+  	int zimmer;		d.art = "Hoersaal";
+  	char gebauede;
+  	const char *art;		e = (struct Raum*) malloc (sizeof(struct Raum));
+	}d;			e -> zimmer = 124;
+				e -> gebauede = ' F ';
+				e -> art = "Buero";
+
+	b.)
+
+	ILP 32:	4 + 4 + 1 = 9 Byte ohne Ausrichtung
+		4 + 4 + 4 = 12 Byte mit Ausrichtung
+
+	LP 64:	8 + 4 + 1 = 13 Byte ohne Ausrichtung
+		8 + 8 + 8 = 16 Byte mit Ausrichtung
+
+
+	Aufgabe 2:
+
+	a.)
+
+	/* quadrat.h */		
+
+	#ifndef	QUADRAT_H
+	#define	QUADRAT_H
+
+	double quadrat_flaeche(double);
+
+	#endif
+
+	/* quadrat.c */
+	#include	"quadrat.h"
+
+	static double zumquadrat(double);
+	double quadrat_flaeche(double s)
+	{
+	return zumquadrat(s);
+	}
+
+	static double zumquadrat(double d)
+	{
+	return d * d;
+	}
+
+	b.)
+
+	/* wuerfel.h */
+	#ifndef	WUERFEL_H
+	#define	WUERFEL_H
+
+	double wuerfel_oberflaeche(double);
+	double wuerfel_volumen(double);
+
+	#endif
+
+	/* wuerfel.c */
+	#include	"wuerfel.h"
+	#include "quadrat.h"
+
+	double wuerfel_oberflaeche(double k)
+	{
+	return Quadrat.flaeche(kantenlaenge) * 6;
+	}
+
+	double wuerfel_volumen(double v)
+	{
+	return Quadrat.flaeche(kantenlaenge) * kantenlaenge;
+	}
+
+	c.)
+
+	/*wuerfeltest.c */
+	#include <stdio.h>
+	#include <stdlib.h>
+	#include "wuerfel.h"
+
+	int main(int argc, char* argv[])
+	{
+	double k = atof(argv[1]);
+	double f = Wuerfel.oberflaeche(k);
+	double v = Wuerfel.volumen(k);
+
+	printf("Kantenlaenge %f, Oberflaeche %f, Volumen %f%n", k, f, v);
+	return 0;
+
+	d.)
+	Es wird eine Null übergeben deshalb bricht es auch mit einer NullPointerException ab.
+	Bei argc und argv ist kein Wert vorhanden deshalb wird eine Null übergeben. Mit atof
+	wird versucht ein Null-Wert in einen Int-Wert umzuwandeln. Was nicht funktionieren kann.
+
+
+	Aufgabe 3:
+
+	a.)
+
+	size_t strlen(const char *s)
+	{
+	size_t size = 0;
+	int i;
+	for(i = 0; s[i]!='\0'; ++i)
+	{
+	++ size;
+	}
+	return size;
+	}
+
+	b.)
+
+	const char *s = "Halli";
+	const char *t = "Hallo";
+
+	char *st = (char*) malloc (sizeof(strlen(s) + strlen(t) + 1);
+
+	strcpy(st, s);
+	strcat(st, t);
+
+	
+	Aufgabe 4:
+
+	PDFLATEX = pdflatex
+	TARGET = hallo.pdf
+
+	%.pdf : %.tex
+	|-> $(PDFLATEX)$<
+	.PHONY = all clean
+	all = $(TARGET)
+
+	clean =
+	|-> $(RM) $(TARGET) $(TARGET : .pdf = .aux) $(TARGET : .pdf = .log)
+
+	Aufgabe 5:
+
+	a.) 
+	Absturz, Endlosschleife, falsche Ergebnisse, Speicherüberlauf
+
+	b.)
+	Absturz: ddd valgrind
+	Endlosschleife: ddd -> Deadpoint setzen
+	Speicherüberlauf: valgrind
+	Fehlverhalten: Hypothese bilden -> beweisen , -> widerlegen
+
+	
+	Aufgabe 6:
+
+	Rückgabewert -1
+	errno
+
+
+	Aufgabe 7:
+
+	a.)
+	boolean, Namespaces, überladen von Methoden, Operatoren überladen, Kapselung
+
+	b.)
+	Mehrfachvererbung in C++, GarbageCollector in Java
+	Alles kann in C++ geworfen werden
+
+

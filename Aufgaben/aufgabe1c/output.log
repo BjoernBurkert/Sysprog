@@ -1,0 +1,97 @@
+Skript gestartet auf Do 30 Mär 2017 16:32:39 CEST
+]0;bjorner@bjorner-AOD255E: /media/bjorner/C26CB05B6CB04BC3/Users/Björn/Desktop/HTWGKonstanz/Semester2/Systemproggen[01;32mbjorner@bjorner-AOD255E[00m:[01;34m/media/bjorner/C26CB05B6CB04BC3/Users/Björn/Desktop/HTWG
+Konstanz/Semester2/Systemproggen[00m$ make CC=g++ clean aufgabe1[6P./aufgabe1 | sort -rmake CC=g++ clean aufgabe1[6P./aufgabe1 | sort -r[K[K
+Adresse: 0xbf8d83b0; Platzbedarf: 4; Typ: int , Name: iZahl , Wert: 345
+Adresse: 0xbf8d83ac; Platzbedarf: 2; Typ: short , Name: SiZahl , Wert: 3
+Adresse: 0xbf8d83b4; Platzbedarf: 4; Typ: long , Name: LiZahl , Wert: 13
+Adresse: 0xbf8d83b8; Platzbedarf: 4; Typ: unsigned int , Name: UiBytefolge , Wert: 4095
+Adresse: 0xbf8d83ae; Platzbedarf: 2; Typ: unsigned short int , Name: USiBytefolge , Wert: 255
+Adresse: 0xbf8d83bc; Platzbedarf: 4; Typ: unsigned long int , Name: ULiBytefolge , Wert: 4095
+Adresse: 0xbf8d83c0; Platzbedarf: 4; Typ: float , Name: fiZahl , Wert: 3.150000
+Adresse: 0xbf8d83c8; Platzbedarf: 8; Typ: double , Name: dZahl , Wert: 3.130000
+Adresse: 0xbf8d83d0; Platzbedarf: 12; Typ: long double , Name: ldZahl , Wert: 3.120000
+Adresse: 0xbf8d83a9; Platzbedarf: 1; Typ: char , Name: zeichen , Wert: 97
+Adresse: 0xbf8d83aa; Platzbedarf: 1; Typ: signed char, Name: scByte , Wert: -1
+Adresse: 0xbf8d83ab; Platzbedarf: 1; Typ: unsigned cahr , Name: ucByte , Wert: 15
+Adresse: 0xbf8d83c4; Platzbedarf: 4; Typ: String , Name: s , Wert: Hallo
+Dieser Rechner ist ein ILP 32bit Rechner!]0;bjorner@bjorner-AOD255E: /media/bjorner/C26CB05B6CB04BC3/Users/Björn/Desktop/HTWGKonstanz/Semester2/Systemproggen[01;32mbjorner@bjorner-AOD255E[00m:[01;34m/media/bjorner/C26CB05B6CB04BC3/Users/Björn/Desktop/HTWG
+Konstanz/Semester2/Systemproggen[00m$ ./aufgabe1make CC=g++ clean aufgabe1[6P./aufgabe1 | sort -r[K
+Adresse: 0xbfd981d9; Platzbedarf: 1; Typ: char , Name: zeichen , Wert: 97
+Adresse: 0xbfd981da; Platzbedarf: 1; Typ: signed char, Name: scByte , Wert: -1
+Adresse: 0xbfd981db; Platzbedarf: 1; Typ: unsigned cahr , Name: ucByte , Wert: 15
+Adresse: 0xbfd981dc; Platzbedarf: 2; Typ: short , Name: SiZahl , Wert: 3
+Adresse: 0xbfd981de; Platzbedarf: 2; Typ: unsigned short int , Name: USiBytefolge , Wert: 255
+Adresse: 0xbfd981e0; Platzbedarf: 4; Typ: int , Name: iZahl , Wert: 345
+Adresse: 0xbfd981e4; Platzbedarf: 4; Typ: long , Name: LiZahl , Wert: 13
+Adresse: 0xbfd981e8; Platzbedarf: 4; Typ: unsigned int , Name: UiBytefolge , Wert: 4095
+Adresse: 0xbfd981ec; Platzbedarf: 4; Typ: unsigned long int , Name: ULiBytefolge , Wert: 4095
+Adresse: 0xbfd981f0; Platzbedarf: 4; Typ: float , Name: fiZahl , Wert: 3.150000
+Adresse: 0xbfd981f4; Platzbedarf: 4; Typ: String , Name: s , Wert: Hallo
+Adresse: 0xbfd981f8; Platzbedarf: 8; Typ: double , Name: dZahl , Wert: 3.130000
+Adresse: 0xbfd98200; Platzbedarf: 12; Typ: long double , Name: ldZahl , Wert: 3.120000
+Dieser Rechner ist ein ILP 32bit Rechner!
+]0;bjorner@bjorner-AOD255E: /media/bjorner/C26CB05B6CB04BC3/Users/Björn/Desktop/HTWGKonstanz/Semester2/Systemproggen[01;32mbjorner@bjorner-AOD255E[00m:[01;34m/media/bjorner/C26CB05B6CB04BC3/Users/Björn/Desktop/HTWG
+Konstanz/Semester2/Systemproggen[00m$ ./aufgabe1 | sort[Kmake CC=g++ clean aufgabe1[6P./aufgabe1 | sort -r
+Dieser Rechner ist ein ILP 32bit Rechner!
+Adresse: 0xbfa87e30; Platzbedarf: 12; Typ: long double , Name: ldZahl , Wert: 3.120000
+Adresse: 0xbfa87e28; Platzbedarf: 8; Typ: double , Name: dZahl , Wert: 3.130000
+Adresse: 0xbfa87e24; Platzbedarf: 4; Typ: String , Name: s , Wert: Hallo
+Adresse: 0xbfa87e20; Platzbedarf: 4; Typ: float , Name: fiZahl , Wert: 3.150000
+Adresse: 0xbfa87e1c; Platzbedarf: 4; Typ: unsigned long int , Name: ULiBytefolge , Wert: 4095
+Adresse: 0xbfa87e18; Platzbedarf: 4; Typ: unsigned int , Name: UiBytefolge , Wert: 4095
+Adresse: 0xbfa87e14; Platzbedarf: 4; Typ: long , Name: LiZahl , Wert: 13
+Adresse: 0xbfa87e10; Platzbedarf: 4; Typ: int , Name: iZahl , Wert: 345
+Adresse: 0xbfa87e0e; Platzbedarf: 2; Typ: unsigned short int , Name: USiBytefolge , Wert: 255
+Adresse: 0xbfa87e0c; Platzbedarf: 2; Typ: short , Name: SiZahl , Wert: 3
+Adresse: 0xbfa87e0b; Platzbedarf: 1; Typ: unsigned cahr , Name: ucByte , Wert: 15
+Adresse: 0xbfa87e0a; Platzbedarf: 1; Typ: signed char, Name: scByte , Wert: -1
+Adresse: 0xbfa87e09; Platzbedarf: 1; Typ: char , Name: zeichen , Wert: 97
+]0;bjorner@bjorner-AOD255E: /media/bjorner/C26CB05B6CB04BC3/Users/Björn/Desktop/HTWGKonstanz/Semester2/Systemproggen[01;32mbjorner@bjorner-AOD255E[00m:[01;34m/media/bjorner/C26CB05B6CB04BC3/Users/Björn/Desktop/HTWG
+Konstanz/Semester2/Systemproggen[00m$ ./aufgabe1 | sort -r[K[K
+Adresse: 0xbfdc6fb0; Platzbedarf: 4; Typ: int , Name: iZahl , Wert: 345
+Adresse: 0xbfdc6fac; Platzbedarf: 2; Typ: short , Name: SiZahl , Wert: 3
+Adresse: 0xbfdc6fb4; Platzbedarf: 4; Typ: long , Name: LiZahl , Wert: 13
+Adresse: 0xbfdc6fb8; Platzbedarf: 4; Typ: unsigned int , Name: UiBytefolge , Wert: 4095
+Adresse: 0xbfdc6fae; Platzbedarf: 2; Typ: unsigned short int , Name: USiBytefolge , Wert: 255
+Adresse: 0xbfdc6fbc; Platzbedarf: 4; Typ: unsigned long int , Name: ULiBytefolge , Wert: 4095
+Adresse: 0xbfdc6fc0; Platzbedarf: 4; Typ: float , Name: fiZahl , Wert: 3.150000
+Adresse: 0xbfdc6fc8; Platzbedarf: 8; Typ: double , Name: dZahl , Wert: 3.130000
+Adresse: 0xbfdc6fd0; Platzbedarf: 12; Typ: long double , Name: ldZahl , Wert: 3.120000
+Adresse: 0xbfdc6fa9; Platzbedarf: 1; Typ: char , Name: zeichen , Wert: 97
+Adresse: 0xbfdc6faa; Platzbedarf: 1; Typ: signed char, Name: scByte , Wert: -1
+Adresse: 0xbfdc6fab; Platzbedarf: 1; Typ: unsigned cahr , Name: ucByte , Wert: 15
+Adresse: 0xbfdc6fc4; Platzbedarf: 4; Typ: String , Name: s , Wert: Hallo
+Dieser Rechner ist ein ILP 32bit Rechner!]0;bjorner@bjorner-AOD255E: /media/bjorner/C26CB05B6CB04BC3/Users/Björn/Desktop/HTWGKonstanz/Semester2/Systemproggen[01;32mbjorner@bjorner-AOD255E[00m:[01;34m/media/bjorner/C26CB05B6CB04BC3/Users/Björn/Desktop/HTWG
+Konstanz/Semester2/Systemproggen[00m$ script --hl[Kelp
+
+Usage:
+ script [options] [file]
+
+Make a typescript of a terminal session.
+
+Optionen:
+ -a, --append            append the output
+ -c, --command <command> run command rather than interactive shell
+ -e, --return            return exit code of the child process
+ -f, --flush             run flush after each write
+     --force             use output file even when it is a link
+ -q, --quiet             be quiet
+ -t, --timing[=<file>]   output timing data to stderr (or to FILE)
+ -V, --version           output version information and exit
+ -h, --help              display this help and exit
+
+
+For more details see script(1).
+]0;bjorner@bjorner-AOD255E: /media/bjorner/C26CB05B6CB04BC3/Users/Björn/Desktop/HTWGKonstanz/Semester2/Systemproggen[01;32mbjorner@bjorner-AOD255E[00m:[01;34m/media/bjorner/C26CB05B6CB04BC3/Users/Björn/Desktop/HTWG
+Konstanz/Semester2/Systemproggen[00m$ script a[K-a test2.log
+Skript gestartet, die Datei ist test2.log
+]0;bjorner@bjorner-AOD255E: /media/bjorner/C26CB05B6CB04BC3/Users/Björn/Desktop/HTWGKonstanz/Semester2/Systemproggen[01;32mbjorner@bjorner-AOD255E[00m:[01;34m/media/bjorner/C26CB05B6CB04BC3/Users/Björn/Desktop/HTWG
+Konstanz/Semester2/Systemproggen[00m$ make CC=g++ clean aufgabe1[6P./aufgabe1 | sort -r[K[K
+Adresse: 0xbf9887f0; Platzbedarf: 4; Typ: int , Name: iZahl , Wert: 345
+Adresse: 0xbf9887ec; Platzbedarf: 2; Typ: short , Name: SiZahl , Wert: 3
+Adresse: 0xbf9887f4; Platzbedarf: 4; Typ: long , Name: LiZahl , Wert: 13
+Adresse: 0xbf9887f8; Platzbedarf: 4; Typ: unsigned int , Name: UiBytefolge , Wert: 4095
+Adresse: 0xbf9887ee; Platzbedarf: 2; Typ: unsigned short int , Name: USiBytefolge , Wert: 255
+Adresse: 0xbf9887fc; Platzbedarf: 4; Typ: unsigned long int , Name: ULiBytefolge , Wert: 4095
+Adresse: 0xbf988800; Platzbedarf: 4; Typ: float , Name: fiZahl , Wert: 3.150000
+Adresse: 0xbf988808; Platzbedar

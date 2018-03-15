@@ -1,0 +1,55 @@
+bj721bur@g149-lx20:~/z-drive/Systemproggen/aufgabe7$ ./filesize xxx *
+Die Datei "./filesize" ist 7600 Byte groß.
+xxx: No such file or directory
+Die Datei "filecopy" ist 8312 Byte groß.
+Die Datei "filecopy.c" ist 1178 Byte groß.
+Die Datei "filecopy-kopie.c" ist 1178 Byte groß.
+Die Datei "filecopy.o" ist 4652 Byte groß.
+Die Datei "file-kopie.c" ist 1178 Byte groß.
+Die Datei "filesize" ist 7600 Byte groß.
+Die Datei "filesize.c" ist 591 Byte groß.
+Die Datei "filesize.o" ist 1516 Byte groß.
+Die Datei "Makefile" ist 203 Byte groß.
+Die Datei "Testfragen" ist 211 Byte groß.
+bj721bur@g149-lx20:~/z-drive/Systemproggen/aufgabe7$ ls -l xxx *
+ls: Zugriff auf xxx nicht möglich: Datei oder Verzeichnis nicht gefunden
+-rwxr-xr-x 1 bj721bur ain 8312 Jun 29 12:27 filecopy
+-rwxr-xr-x 1 bj721bur ain 1178 Jun 27 21:36 filecopy.c
+-rwxr-xr-x 1 bj721bur ain 1178 Jun 29 12:53 filecopy-kopie.c
+-rwxr-xr-x 1 bj721bur ain 4652 Jun 27 21:39 filecopy.o
+-rwxr-xr-x 1 bj721bur ain 1178 Jun 29 13:42 file-kopie.c
+-rwxr-xr-x 1 bj721bur ain 7600 Jun 29 13:00 filesize
+-rwxr-xr-x 1 bj721bur ain  591 Jun 29 13:00 filesize.c
+-rwxr-xr-x 1 bj721bur ain 1516 Jun 27 21:39 filesize.o
+-rwxr-xr-x 1 bj721bur ain  203 Jun 27 21:52 Makefile
+-rwxr-xr-x 1 bj721bur ain  211 Jun 29 12:52 Testfragen
+bj721bur@g149-lx20:~/z-drive/Systemproggen/aufgabe7$ export LC_MESSAGES=C
+bj721bur@g149-lx20:~/z-drive/Systemproggen/aufgabe7$ ./filesize xxx *
+Die Datei "./filesize" ist 7600 Byte groß.
+xxx: No such file or directory
+Die Datei "filecopy" ist 8312 Byte groß.
+Die Datei "filecopy.c" ist 1178 Byte groß.
+Die Datei "filecopy-kopie.c" ist 1178 Byte groß.
+Die Datei "filecopy.o" ist 4652 Byte groß.
+Die Datei "file-kopie.c" ist 1178 Byte groß.
+Die Datei "filesize" ist 7600 Byte groß.
+Die Datei "filesize.c" ist 591 Byte groß.
+Die Datei "filesize.o" ist 1516 Byte groß.
+Die Datei "Makefile" ist 203 Byte groß.
+Die Datei "Testfragen" ist 211 Byte groß.
+bj721bur@g149-lx20:~/z-drive/Systemproggen/aufgabe7$ ls -l xxx *
+ls: cannot access xxx: No such file or directory
+-rwxr-xr-x 1 bj721bur ain 8312 Jun 29 12:27 filecopy
+-rwxr-xr-x 1 bj721bur ain 1178 Jun 27 21:36 filecopy.c
+-rwxr-xr-x 1 bj721bur ain 1178 Jun 29 12:53 filecopy-kopie.c
+-rwxr-xr-x 1 bj721bur ain 4652 Jun 27 21:39 filecopy.o
+-rwxr-xr-x 1 bj721bur ain 1178 Jun 29 13:42 file-kopie.c
+-rwxr-xr-x 1 bj721bur ain 7600 Jun 29 13:00 filesize
+-rwxr-xr-x 1 bj721bur ain  591 Jun 29 13:00 filesize.c
+-rwxr-xr-x 1 bj721bur ain 1516 Jun 27 21:39 filesize.o
+-rwxr-xr-x 1 bj721bur ain  203 Jun 27 21:52 Makefile
+-rwxr-xr-x 1 bj721bur ain  211 Jun 29 12:52 Testfragen
+bj721bur@g149-lx20:~/z-drive/Systemproggen/aufgabe7$ ./filecopy filecopy.c filecopy-kopie.c
+Ziel filecopy-kopie.c konnte nicht erzeugt werden.
+bj721bur@g149-lx20:~/z-drive/Systemproggen/aufgabe7$ diff filecopy.c filecopy-kopie.c
+bj721bur@g149-lx20:~/z-drive/Systemproggen/aufgabe7$ 
