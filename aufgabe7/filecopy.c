@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <errno.h>
+#include <string.h>
 
 int main(int argc, char **argv)
 {
@@ -15,10 +17,10 @@ int main(int argc, char **argv)
     char *buffer;
     struct stat st;
     
-    localecheck = setlocale(LC_MESSAGES, "de_de.UTF-8");
+    char* localecheck = setlocale(LC_MESSAGES, "de_de.UTF-8");
     if (localecheck == NULL)
     {
-        printf("Die Plattform unterstützt die deutschen Systemmeldungen nicht."\n);
+        printf("Die Plattform unterstützt die deutschen Systemmeldungen nicht.\n");
     }
     if (argc != 3)
     {
@@ -33,7 +35,7 @@ int main(int argc, char **argv)
     {   
         fprintf(stderr,
             "Quelle %s kann nicht geöffnet werden (errn %d: %s)\n",
-            argv[1], errno. strerror(errno));
+            argv[1], errno, strerror(errno));
         return 1;
     }
     
@@ -41,8 +43,8 @@ int main(int argc, char **argv)
     if (destination == -1)
     {   
         fprintf(stderr,
-            "Ziel %s konnte nicht erzeugt werden (errno %d: %s)\n,
-            argv[2], errno. strerror(errno));
+            "Ziel %s konnte nicht erzeugt werden (errno %d: %s)\n",
+            argv[2], errno, strerror(errno));
         return 1;
     }
     
